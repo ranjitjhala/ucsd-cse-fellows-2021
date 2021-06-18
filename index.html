@@ -34,17 +34,22 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem active">
-                                <a href="." class="nav-link">[Protected] Program</a>
+                                <a href="." class="nav-link">Program</a>
                             </li>
                             <li class="navitem">
-                                <a href="apply/" class="nav-link">[Protected] Apply</a>
+                                <a href="apply/" class="nav-link">Apply</a>
                             </li>
                             <li class="navitem">
-                                <a href="deadlines/" class="nav-link">[Protected] Deadlines</a>
+                                <a href="deadlines/" class="nav-link">Deadlines</a>
                             </li>
                         </ul>
 
                     <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
                             <li class="nav-item">
                                 <a rel="prev" class="nav-link disabled">
                                     <i class="fa fa-arrow-left"></i> Previous
@@ -90,125 +95,25 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<div id="mkdocs-encrypted-content" style="display:none">FAU+1rZP2Z8yusXr4qAHTg==;7NO9TQ/vEBvKvm2QXoQbDSVzQC87+XPiV4t+GCntGMYPJcAPBs/f4zvegrsDZerJe0h3obTVkFomWEdkr+v7UFnCIItqPa1j6dOy0QSiZjB8la8S4EKYZCWfPv4S7XIlfXeMTV5EvLmPa27zgttO4g81rhx6xH/9JkT0ZBbsxRMjnCI5aO3n0UXvsdaHa/Fsqz254dV0UFd3k186g0Zg8F90zLlEAFkpJGNa0hvWZuOv+3ZOaBcGPRxE0gT6RPekasOuv7MaOci4axgy25yAVbT8h81SJw0oUQgDps68OljXHdHO1hOHNZm4RbZDQYmhHi1i+gXICeOT5PxDphIjc3QBIvQ1Wu4lqAZaxGKKioEcTGHaWJT2OQ+nWXJYrI0uMMvnXKCqv2EK/pf819xWWE/E9BvCMDtSR4CMpKbCr7X/9/oGfHHZpRX+0VMiR9wqfQUS8nJiy12iriBNSxKCz7SRjIHbvtRZKe3GyrFU2u6+ot+w6QNO9DV3vGKehTFXiOqZtTUqZ/+cXBz+z/2K6igVypU9QLfHmdhvjfnRM8GuuUklTS8lB86sUSg+prF1wSZ2bg54/M0VsWjDGErucsCwOD0ioBwlor8qUamwVrKH9Uz4x5EfvUlK8IZtiOhjfq88IZMvxdxgw5RToGxf10pN295GLuICIUZdW2MvEhrIEc+HEZhJqeexX53kFYv5INpFEh2ENpKco/2w/G/he1luwZlR1+ZhKvnMp5X2FsdbSJtRdYBEkPPK0Q1DMrxbrXrNxYlmCjTJgSmNrluZZxUM+cUDtIb7sAAqhGMOR7qkf7r/XN8FTa8LSS2VD6+hSQ5RVAkLOPfT2kIy5nnZt9j8h1tZd64t1DCbL9s63RQ2DmHGcNrJ3qo3DJ4nKtSf1gab4H+oQq2Z9HISuQgwc40QazZu8sQzfH2EQlCsM09z6CdOZ6YsfhSAeg8GQhQ8dm9qfJshLdKIY1AhystZc59l/ugYcOSL4glm+Gt9wXchHHM5zRmssjwmFRcayoeMXkAQTyaoRaNq8vkJTMn6fH75Yg2TDi4oZ+ryx+K+0zKxl2GVeKaPQwzkhmPO0tceOacwLtY4VFdFD2SPNwgRy5bxNhIuKa1piqDBzEGbCmg7SKCqrCfpeQ29IUe8GXnEQHpdxLQPBzmHQmabZN9bgBV+8lRa3mY2dWqr5M4RqindZ3vVLll3J4iHSVDSnQflArg9UKUN1doj/97qmIm+lZp51qgd+GbA9w3dzCHAWdg4tLnA4VXrrQXgf0vNyvh4+ANBFSfW6rgKN/E674OkN+xlCCV1fECuBT6HgdFZLsMMeQFWmZwFzvZi4N9TD1XzjSUGbU7uDB/taXJHpWJ5sD2qU2pIRcZ5FaVLx/qqIU4NqO248kYreo7VcOsvKATCpIqU1iyda95yTHhITx6XIAELtXOjhFDCowBh4SJvBIQRr4IBv+XFBbPM2kfvBNzVQemTnWjw3+Wz4f/NShP048Cj11+SFC00BIUUc1SfbmV8FXxW/m5F7pIeYjRRmQVn3Yu99PCUSDxsYrMjlPW4EjXt53r7qWi5eELTz5hi27AAu/V0cP6SUjPWa+UNrZi1dQ3k4WfFOFFCx5aZ3M6F+fO1xQfFyO8n/vScHuAN+lUdZpeKHxFjmEe3NTETEbzazJ0rZqxaxoVWu7VnQKHPlEo4PgGACaQaGTLIRtn3brFDTYEkxYGtDzJEZIdrlf4Mr7A4hQtv4XX3PZXLSXxzyDrBAEuA+OWSvKOj/MUb4VBk72f1gBYnpa/EgbV/InjYEYrUdgwVLPiRuVtGx7cL8w3wJQwHKuNPKTt3cghUnFG6b7SVMZYy9NkAYz18srMz3srpdd8k3DazoRuZVge2k0gQ3ygYQDgqY264cjQ6bM4QrY1T7j+fAIfTQ2ANSaap;^</div>
-<div id="mkdocs-decrypted-content">
-    <form id="mkdocs-decrypt-form">
-        <h1>This content is protected with AES encryption. </h1>
-        <p>Contact your administrator for access to this page.</p>
-        <input type="password" id="mkdocs-content-password" placeholder="Provide password and press ENTER" />
-        
-        <p id="mkdocs-decrypt-msg"></p>
-    </form>
-</div>
-
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.js"></script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/enc-base64.js"></script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/cipher-core.js"></script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/pad-nopadding.js"></script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/md5.js"></script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/aes.js"></script>
-
-
-<script type="text/javascript">
-    (function() {
-        var strip_padding = function(padded_content, padding_char) {
-            /* Strips the padding character from decrypted content. */
-            for (var i = padded_content.length; i > 0; i--) {
-                if (padded_content[i - 1] !== padding_char) {
-                    return padded_content.slice(0, i);
-                }
-            }
-        };
-        var decrypt_content = function(password, iv_b64, ciphertext_b64, padding_char) {
-            /* Decrypts the content from the ciphertext bundle. */
-            var key = CryptoJS.MD5(password),
-                iv = CryptoJS.enc.Base64.parse(iv_b64),
-                ciphertext = CryptoJS.enc.Base64.parse(ciphertext_b64),
-                bundle = {
-                    key: key,
-                    iv: iv,
-                    ciphertext: ciphertext
-                };
-            var plaintext = CryptoJS.AES.decrypt(bundle, key, {
-                iv: iv,
-                padding: CryptoJS.pad.NoPadding
-            });
-            try {
-                return strip_padding(plaintext.toString(CryptoJS.enc.Utf8), padding_char);
-            } catch (err) {
-                // encoding failed; wrong password
-                return false;
-            }
-        };
-        
-        var init_decryptor = function() {
-            var password_input = document.getElementById('mkdocs-content-password'),
-                encrypted_content = document.getElementById('mkdocs-encrypted-content'),
-                decrypted_content = document.getElementById('mkdocs-decrypted-content'),
-                
-                decrypt_form = document.getElementById('mkdocs-decrypt-form');
-            // Adjust password field width to placeholder length
-            let input = document.getElementById("mkdocs-content-password");
-            input.setAttribute('size', input.getAttribute('placeholder').length);
-            
-            // Decrypt content
-            var decrypt_action = function() {
-                // grab the ciphertext bundle
-                var parts = encrypted_content.innerHTML.split(';');
-                // decrypt it
-                var content = decrypt_content(
-                    password_input.value,
-                    parts[0],
-                    parts[1],
-                    parts[2]
-                );
-                if (content) {
-                    // success; display the decrypted content
-                    decrypted_content.innerHTML = content;
-                    encrypted_content.parentNode.removeChild(encrypted_content);
-                    // any post processing on the decrypted content should be done here
-                    
-                    
-                    document.getElementById("mkdocs-decrypted-content").querySelectorAll('pre code').forEach((block) => {
-                        hljs.highlightBlock(block);
-                    });
-                    
-                } else {
-                    // create HTML element for the inform message
-                    var decrypt_msg = document.createElement('p');
-                    decrypt_msg.setAttribute('id', 'mkdocs-decrypt-msg')
-                    var node = document.createTextNode('Invalid password.')
-                    decrypt_msg.appendChild(node)
-                    var mkdocs_decrypt_msg = document.getElementById('mkdocs-decrypt-msg');
-                    // clear all previous failure messages
-                    while (mkdocs_decrypt_msg.firstChild) {
-                        mkdocs_decrypt_msg.firstChild.remove();
-                    }
-                    mkdocs_decrypt_msg.appendChild(decrypt_msg);
-                    password_input.value = '';
-                    password_input.focus();
-                }
-            }
-            
-            
-            password_input.addEventListener('keydown', function(event) {
-                if (event.key === "Enter") {
-                    
-                    event.preventDefault();
-                    decrypt_action();
-                    
-                }
-            });
-        };
-        document.addEventListener('DOMContentLoaded', init_decryptor);
-    })();
-</script></div>
+<h1 id="program">Program<a class="headerlink" href="#program" title="Permanent link">&para;</a></h1>
+<p><strong>TL;DR</strong> Please apply to the UCSD CSE Fellows Post-doctoral Scholars Program, <strong>applications due July 30, 2021</strong>.</p>
+<p>We would like to announce the UCSD CSE Fellows program for 2021-22.
+This program seeks to recruit 1-3 talented postdoctoral scholars to 
+CSE. Each postdoc will be hired for a 2-year position, with a salary 
+between 61-65k per year. The goal of this program is to attract new 
+ideas and talents to UCSD CSE and thus we particularly encourage 
+applicants whose PhD work was done elsewhere.</p>
+<h2 id="location">Location<a class="headerlink" href="#location" title="Permanent link">&para;</a></h2>
+<p>We will expect postdocs to relocate to San Diego, but during 
+the current pandemic we will accommodate candidates whose 
+situation requires them to participate remotely.</p>
+<h2 id="mentors">Mentors<a class="headerlink" href="#mentors" title="Permanent link">&para;</a></h2>
+<p>Following the CIFellows model, each application must be paired 
+with one (or more) UCSD CSE faculty mentors who will be named 
+by the applicant. We encourage interested faculty to seek out 
+potential applicants. Faculty who are already potential mentors
+for the <a href="https://cifellows2021.org/">CIFellows program</a> should 
+encourage their mentees to apply to this program as well. </p></div>
             </div>
         </div>
 
@@ -221,8 +126,32 @@
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -268,5 +197,5 @@
 
 <!--
 MkDocs version : 1.1.2
-Build Date UTC : 2021-06-18 03:48:21.187905+00:00
+Build Date UTC : 2021-06-18 03:49:39.987299+00:00
 -->

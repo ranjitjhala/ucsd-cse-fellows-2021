@@ -8,7 +8,7 @@
         
         
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>[Protected] Deadlines - UCSD CSE Fellows 2021</title>
+        <title>Deadlines - UCSD CSE Fellows 2021</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/font-awesome.min.css" rel="stylesheet">
         <link href="../css/base.css" rel="stylesheet">
@@ -34,17 +34,22 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="navitem">
-                                <a href=".." class="nav-link">[Protected] Program</a>
+                                <a href=".." class="nav-link">Program</a>
                             </li>
                             <li class="navitem">
-                                <a href="../apply/" class="nav-link">[Protected] Apply</a>
+                                <a href="../apply/" class="nav-link">Apply</a>
                             </li>
                             <li class="navitem active">
-                                <a href="./" class="nav-link">[Protected] Deadlines</a>
+                                <a href="./" class="nav-link">Deadlines</a>
                             </li>
                         </ul>
 
                     <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
                             <li class="nav-item">
                                 <a rel="prev" href="../apply/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
@@ -82,125 +87,20 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<div id="mkdocs-encrypted-content" style="display:none">AaoqqQk5qSs5/hOFkrRW/Q==;BKyxrrEEKn05y/st/+Py3wi1rqsffr24RisVh69EtdEviJFWRl2UqZpC+vCaYc1pXYUuoFFF53Hs5GFgRNH/ejX1npfH6kMJVUtkbHbA2TtO0jDflNpjT2m2bE9Ffzxbn2ZszAWePTBXbiZ/YDvN/F2tVGIzp/xnMU17IaKI9dlQlhkjCh6fU7v8IYA6J4bo10fX6wVvylhDe3wbfwlvle64Eqnul8WBgOfKaHd1eyCiPjvEbBv2Fsq0zuetmTs9JF57YaTl+Blmk4hzN57OsJYMI140fTlKb4H4yoUFXswEnrw9iIThqjtXyRLxaYIetuAM+VvrVPm5vwudFbD42LEMDxZPVHdo7mpLx9573wnoe8Rp6pZQBwzlHNJ5TuO4A5Yx7ikhahX1V/8eYKnU0N1MzUtKZNsJIHQ/rZ3MjTXk/+0eqer/DYROnVQxXhDAeIU8sCc1GAZog6e69BcD0j0jTk+cQiAnk6xFs46VWiExwDyPKo8uXo9HT0AMl7YIYv8jjNp+fEnkKIzZxtY/r1BL7ftVMUtm3cC2Zmg9maXkHodHF/GTdTKtYLqZuFexNEHCcbpxxYl6MhSS3Jk7hNokvdNzKx6qwuJGrNVwjpyPg/nEXbGZntQtP6NiluvNGxZDfqyq2pbbRfY2qSuNNFgraQGmtgni8JtOPidTDgsS6R4gdhdVu3lVrqAv7dwWJwIRpkzOzu8n2vN4T99gstneIOfaT0UzAAozv/9Uv2p6I9sgE6PQNS30Onus20IYjyiRUr60T5PHMCGWyd6WaM6RxDhLd8xENj+52PzH0MUQNdheReH1pEYIEkt816cuJEHBkLvL/Mn/a1a05C/D1w==;^</div>
-<div id="mkdocs-decrypted-content">
-    <form id="mkdocs-decrypt-form">
-        <h1>This content is protected with AES encryption. </h1>
-        <p>Contact your administrator for access to this page.</p>
-        <input type="password" id="mkdocs-content-password" placeholder="Provide password and press ENTER" />
-        
-        <p id="mkdocs-decrypt-msg"></p>
-    </form>
-</div>
-
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/core.js"></script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/enc-base64.js"></script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/cipher-core.js"></script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/pad-nopadding.js"></script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/md5.js"></script>
-
-<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/aes.js"></script>
-
-
-<script type="text/javascript">
-    (function() {
-        var strip_padding = function(padded_content, padding_char) {
-            /* Strips the padding character from decrypted content. */
-            for (var i = padded_content.length; i > 0; i--) {
-                if (padded_content[i - 1] !== padding_char) {
-                    return padded_content.slice(0, i);
-                }
-            }
-        };
-        var decrypt_content = function(password, iv_b64, ciphertext_b64, padding_char) {
-            /* Decrypts the content from the ciphertext bundle. */
-            var key = CryptoJS.MD5(password),
-                iv = CryptoJS.enc.Base64.parse(iv_b64),
-                ciphertext = CryptoJS.enc.Base64.parse(ciphertext_b64),
-                bundle = {
-                    key: key,
-                    iv: iv,
-                    ciphertext: ciphertext
-                };
-            var plaintext = CryptoJS.AES.decrypt(bundle, key, {
-                iv: iv,
-                padding: CryptoJS.pad.NoPadding
-            });
-            try {
-                return strip_padding(plaintext.toString(CryptoJS.enc.Utf8), padding_char);
-            } catch (err) {
-                // encoding failed; wrong password
-                return false;
-            }
-        };
-        
-        var init_decryptor = function() {
-            var password_input = document.getElementById('mkdocs-content-password'),
-                encrypted_content = document.getElementById('mkdocs-encrypted-content'),
-                decrypted_content = document.getElementById('mkdocs-decrypted-content'),
-                
-                decrypt_form = document.getElementById('mkdocs-decrypt-form');
-            // Adjust password field width to placeholder length
-            let input = document.getElementById("mkdocs-content-password");
-            input.setAttribute('size', input.getAttribute('placeholder').length);
-            
-            // Decrypt content
-            var decrypt_action = function() {
-                // grab the ciphertext bundle
-                var parts = encrypted_content.innerHTML.split(';');
-                // decrypt it
-                var content = decrypt_content(
-                    password_input.value,
-                    parts[0],
-                    parts[1],
-                    parts[2]
-                );
-                if (content) {
-                    // success; display the decrypted content
-                    decrypted_content.innerHTML = content;
-                    encrypted_content.parentNode.removeChild(encrypted_content);
-                    // any post processing on the decrypted content should be done here
-                    
-                    
-                    document.getElementById("mkdocs-decrypted-content").querySelectorAll('pre code').forEach((block) => {
-                        hljs.highlightBlock(block);
-                    });
-                    
-                } else {
-                    // create HTML element for the inform message
-                    var decrypt_msg = document.createElement('p');
-                    decrypt_msg.setAttribute('id', 'mkdocs-decrypt-msg')
-                    var node = document.createTextNode('Invalid password.')
-                    decrypt_msg.appendChild(node)
-                    var mkdocs_decrypt_msg = document.getElementById('mkdocs-decrypt-msg');
-                    // clear all previous failure messages
-                    while (mkdocs_decrypt_msg.firstChild) {
-                        mkdocs_decrypt_msg.firstChild.remove();
-                    }
-                    mkdocs_decrypt_msg.appendChild(decrypt_msg);
-                    password_input.value = '';
-                    password_input.focus();
-                }
-            }
-            
-            
-            password_input.addEventListener('keydown', function(event) {
-                if (event.key === "Enter") {
-                    
-                    event.preventDefault();
-                    decrypt_action();
-                    
-                }
-            });
-        };
-        document.addEventListener('DOMContentLoaded', init_decryptor);
-    })();
-</script></div>
+<h1 id="deadlines">Deadlines<a class="headerlink" href="#deadlines" title="Permanent link">&para;</a></h1>
+<p>UCSD CSE faculty who intend to apply as mentors should then 
+try to seek out suitable candidates and coordinate with them 
+to apply to the program.</p>
+<ul>
+<li>
+<p>Complete applications Due     <strong>July 30, 2021</strong> </p>
+</li>
+<li>
+<p>Selection Notification        <strong>August 6, 2021</strong></p>
+</li>
+</ul>
+<p>Applications are only complete after <strong>candidate</strong> and <strong>mentor</strong> 
+have submitted their respective documents: <strong>both must be done by the July 30 deadline</strong>.</p></div>
             </div>
         </div>
 
@@ -213,8 +113,32 @@
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../js/base.js" defer></script>
+        <script src="../search/main.js" defer></script>
 
-        <div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
