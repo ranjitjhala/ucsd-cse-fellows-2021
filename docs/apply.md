@@ -1,10 +1,11 @@
 # How to Apply
 
-Each application has two parts which should be submitted separately by the **post-doc applicant** and their **UCSD mentor**. 
+Each application has two parts which should be submitted separately 
+by the **post-doc applicant** and their **UCSD mentor**. 
 
 ## Applicant
 
-The applicant will submit the following via this form https://forms.gle/7mMKS6xmCjWoMT817
+The applicant will submit the following via [this form](https://forms.gle/oQ4HyWuLNxEJe3tYA)
 
 + **2 page CV** (in addition to publications, we encourage documentation of any research impact, professional experience or contributions to diversity)
 
@@ -14,18 +15,19 @@ The applicant will submit the following via this form https://forms.gle/7mMKS6xm
 
 ## Mentor
 
-The mentor will submit the following via this form https://forms.gle/nKA58BjXnRFqZSV37
+The mentor will submit the following via [this form](https://forms.gle/uyvpVtayh2QD6Dgk8)
 
-+ **Letter of recommendation** from the applicant's Ph.D supervisor
+* **Letter of recommendation** from the applicant's Ph.D supervisor
 
-+ **Mentoring letter** that will describe a mentoring plan and will 
-complement the applicant’s fellowship plan.  As part of this letter, 
-the mentor commits to: 
+* **Mentoring letter** that will describe a mentoring plan and will 
+complement the applicant’s fellowship plan.  
+
+As part of the mentoring letter, the mentor commits to: 
 
 1. Engage with their candidate in jointly writing and submitting 
    a grant during the postdoc’s tenure at UCSD 
 
-2. work with the postdoc to engage with one of our undergrad research 
+2. Work with the postdoc to engage with one of our undergrad research 
    programs, for example ERSP, STARS, ENLACE, the CalTech/UCSD SURF 
    program, or any other suitable research outreach program.
 
@@ -33,12 +35,12 @@ the mentor commits to:
 
 UCSD CSE faculty who intend to apply as mentors should then try 
 to seek out suitable candidates and coordinate with them to apply 
-to [the program](program.md).
+to this program.
 
-- Complete applications Due     **August 6, 2021**
+- Complete applications Due     **July 30, 2021**
+- Selection Notification        **August 6, 2021**
 
-- Selection Notification        **August 13, 2021**
+Applications are only complete after both candidate and mentor 
+have submitted their [respective documents](apply.md). 
 
-Applications are only complete after both candidate and mentor have submitted their [respective documents](apply.md). 
-
-**Both documents must be submitted by the August 6 deadline**.
+**Both documents must be submitted by the July 30 deadline**.

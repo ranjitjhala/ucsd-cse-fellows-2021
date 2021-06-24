@@ -10,7 +10,3 @@ theme: spacelab
 markdown_extensions:
     - toc:
         permalink: true
-
-plugins:
-    - encryptcontent:
-        global_password: 'jolly_good_fellows'
